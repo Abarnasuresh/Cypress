@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-07-14T10:16:48.942Z",
+    "end": "2023-07-14T10:17:00.880Z",
+    "duration": 11938,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bab21a8c-6510-48b5-aecc-05728437880e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1.cy.js",
+      "file": "cypress\\e2e\\1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "868fc75f-61ce-412b-a0db-842f93b8b2d2",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 251,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\1.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\1.cy.js\\\\template spec -- passes (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com{force:true}');",
+              "err": {
+                "message": "TypeError: Failed to construct 'URL': Invalid URL",
+                "estack": "TypeError: Failed to construct 'URL': Invalid URL\n    at Object.getSuperDomainOrigin (http://localhost:60142/__cypress/runner/cypress_runner.js:176870:7)\n    at $Location.getSuperDomainOrigin (http://localhost:60142/__cypress/runner/cypress_runner.js:165092:99)\n    at $Location.getObject (http://localhost:60142/__cypress/runner/cypress_runner.js:165113:31)\n    at $Location.create (http://localhost:60142/__cypress/runner/cypress_runner.js:165223:21)\n    at visit (http://localhost:60142/__cypress/runner/cypress_runner.js:147693:90)\n    at Context.visit (http://localhost:60142/__cypress/runner/cypress_runner.js:147875:14)\n    at wrapped (http://localhost:60142/__cypress/runner/cypress_runner.js:160852:43)\n    at <unknown> (http://localhost:60142/__cypress/runner/cypress_runner.js:159686:15)\n    at tryCatcher (http://localhost:60142/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60142/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://localhost:60142/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromiseCtx (http://localhost:60142/__cypress/runner/cypress_runner.js:16773:10)\n    at _drainQueueStep (http://localhost:60142/__cypress/runner/cypress_runner.js:13455:12)\n    at _drainQueue (http://localhost:60142/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:60142/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://localhost:60142/__cypress/runner/cypress_runner.js:13330:14)",
+                "diff": null
+              },
+              "uuid": "32135785-bc3e-49ca-992b-8aa0fcb8de4d",
+              "parentUUID": "868fc75f-61ce-412b-a0db-842f93b8b2d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test",
+              "fullTitle": "template spec test",
+              "timedOut": null,
+              "duration": 8879,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\1.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\1.cy.js\\\\template spec -- test (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "/* ==== Generated with Cypress Studio ==== */\ncy.visit('https://opensource-demo.orangehrmlive.com');\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear('A');\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Admin');\ncy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').clear();\ncy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type('admin123{enter}');\ncy.get('.oxd-button').click();\ncy.get(':nth-child(1) > .oxd-main-menu-item').click();\ncy.get('.orangehrm-header-container > .oxd-button').click();\ncy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after > .oxd-icon').click();\ncy.get('.oxd-autocomplete-text-input > input').clear('m');\ncy.get('.oxd-autocomplete-text-input > input').type('m');\ncy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text-input').click();\ncy.get(':nth-child(4) > .oxd-input-group > :nth-child(2) > .oxd-input').clear('T');\ncy.get(':nth-child(4) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Testt@123');\ncy.get('.user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input').clear();\ncy.get('.user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input').type('Test@123');\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear();\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Test@123');\ncy.get('.oxd-button--secondary').click();\ncy.get('.oxd-userdropdown-name').click();\ncy.get(':nth-child(4) > .oxd-userdropdown-link').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-button`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-button`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/1.cy.js:15:7)",
+                "diff": null
+              },
+              "uuid": "62c6d0a8-7562-403f-9858-0b1a47264b3e",
+              "parentUUID": "868fc75f-61ce-412b-a0db-842f93b8b2d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "32135785-bc3e-49ca-992b-8aa0fcb8de4d",
+            "62c6d0a8-7562-403f-9858-0b1a47264b3e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9130,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
