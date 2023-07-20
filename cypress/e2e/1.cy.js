@@ -2,21 +2,26 @@ describe('template spec', () => {
   it('test', function() {
     cy.visit('https://vendor.test.codingtown.com');
     cy.wait(2000)
+  //Login
     cy.get('#username').type('demo.test@yopmail.com');
     cy.get('#password').type('Tester@123');
     cy.wait(2000)
     cy.get('.btn').click({force:true});
+  //selecting the po
     cy.get('#ag-75-input').check();
+    cy.get('.ag-body-viewport input.ag-checkbox-input')
+  //Confirming the po
     cy.get('.d-sm-inline').click({force:true});
-    cy.get('#confirmQty').clear('5');
-    cy.get('#confirmQty').type('1');
+    cy.get('#confirmQty').clear().type('1');
     cy.get('.ng-input').click();
     cy.get(".ng-dropdown-panel-items .ng-option:nth-child(2)").click() 
     cy.get('.d-sm-inline').click({force:true});
+  //Navigating to confirmed po tab
     cy.get('.mt-3 > .nav > :nth-child(2) > .nav-link').click();
     cy.get('.input-group > .form-control').clear('2');
     cy.get('.input-group > .form-control').type('2239');
     cy.wait(5000)
+  //Selecting the Confirmed Po
     cy.get('.ag-cell-wrapper').click({force:true});
     cy.get('.d-sm-inline').click();
     cy.get('#ewayNo').type('1234');
@@ -35,9 +40,12 @@ describe('template spec', () => {
     cy.get('#manufactureDate').type('2023-07-14');
     cy.get('#expiryDate').type('2023-12-20');
     cy.get('#expiryDate').click();
+  //Confirm ASN Create
     cy.get('.d-sm-inline').click();
+  //Returnable material pop-up
     cy.get('.btn-danger').click();
     cy.get(':nth-child(5) > .nav-item > .nav-link').click({force:true});
+  //Profile and Logout
     cy.get('.cursor-pointer').click();
   });
 });
