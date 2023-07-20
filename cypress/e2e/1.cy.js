@@ -26,9 +26,7 @@ describe('template spec', () => {
     cy.get('.d-sm-inline').click();
     cy.get('#ewayNo').type('1234');
     cy.get('#vendorRef').type('123');
-
     cy.get('#deliveryDate').type('2023-10-20') // Selecting date 
-
     cy.get('.ng-input').click({force:true});
     cy.get('.ng-dropdown-panel-items .ng-option:nth-child(2)').click();
     cy.get('#vehicleNo').type('TN48CD1023');
