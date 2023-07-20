@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
+    "tests": 1,
     "passes": 0,
     "pending": 0,
-    "failures": 2,
-    "start": "2023-07-14T10:16:48.942Z",
-    "end": "2023-07-14T10:17:00.880Z",
-    "duration": 11938,
-    "testsRegistered": 2,
+    "failures": 1,
+    "start": "2023-07-20T09:52:31.902Z",
+    "end": "2023-07-20T09:53:00.084Z",
+    "duration": 28182,
+    "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bab21a8c-6510-48b5-aecc-05728437880e",
+      "uuid": "44dc0723-a4de-488c-861d-309e35a21e1d",
       "title": "",
       "fullFile": "cypress\\e2e\\1.cy.js",
       "file": "cypress\\e2e\\1.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "868fc75f-61ce-412b-a0db-842f93b8b2d2",
+          "uuid": "0bdca19b-4140-41f2-b6b8-a38acadbef69",
           "title": "template spec",
           "fullFile": "",
           "file": "",
@@ -35,46 +35,24 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "passes",
-              "fullTitle": "template spec passes",
-              "timedOut": null,
-              "duration": 251,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\1.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\1.cy.js\\\\template spec -- passes (failed).png\"\n      ]\n    ]\n  }\n]",
-              "code": "cy.visit('https://opensource-demo.orangehrmlive.com{force:true}');",
-              "err": {
-                "message": "TypeError: Failed to construct 'URL': Invalid URL",
-                "estack": "TypeError: Failed to construct 'URL': Invalid URL\n    at Object.getSuperDomainOrigin (http://localhost:60142/__cypress/runner/cypress_runner.js:176870:7)\n    at $Location.getSuperDomainOrigin (http://localhost:60142/__cypress/runner/cypress_runner.js:165092:99)\n    at $Location.getObject (http://localhost:60142/__cypress/runner/cypress_runner.js:165113:31)\n    at $Location.create (http://localhost:60142/__cypress/runner/cypress_runner.js:165223:21)\n    at visit (http://localhost:60142/__cypress/runner/cypress_runner.js:147693:90)\n    at Context.visit (http://localhost:60142/__cypress/runner/cypress_runner.js:147875:14)\n    at wrapped (http://localhost:60142/__cypress/runner/cypress_runner.js:160852:43)\n    at <unknown> (http://localhost:60142/__cypress/runner/cypress_runner.js:159686:15)\n    at tryCatcher (http://localhost:60142/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60142/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://localhost:60142/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromiseCtx (http://localhost:60142/__cypress/runner/cypress_runner.js:16773:10)\n    at _drainQueueStep (http://localhost:60142/__cypress/runner/cypress_runner.js:13455:12)\n    at _drainQueue (http://localhost:60142/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:60142/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://localhost:60142/__cypress/runner/cypress_runner.js:13330:14)",
-                "diff": null
-              },
-              "uuid": "32135785-bc3e-49ca-992b-8aa0fcb8de4d",
-              "parentUUID": "868fc75f-61ce-412b-a0db-842f93b8b2d2",
-              "isHook": false,
-              "skipped": false
-            },
-            {
               "title": "test",
               "fullTitle": "template spec test",
               "timedOut": null,
-              "duration": 8879,
+              "duration": 26300,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\1.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\1.cy.js\\\\template spec -- test (failed).png\"\n      ]\n    ]\n  }\n]",
-              "code": "/* ==== Generated with Cypress Studio ==== */\ncy.visit('https://opensource-demo.orangehrmlive.com');\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear('A');\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Admin');\ncy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').clear();\ncy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type('admin123{enter}');\ncy.get('.oxd-button').click();\ncy.get(':nth-child(1) > .oxd-main-menu-item').click();\ncy.get('.orangehrm-header-container > .oxd-button').click();\ncy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after > .oxd-icon').click();\ncy.get('.oxd-autocomplete-text-input > input').clear('m');\ncy.get('.oxd-autocomplete-text-input > input').type('m');\ncy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text-input').click();\ncy.get(':nth-child(4) > .oxd-input-group > :nth-child(2) > .oxd-input').clear('T');\ncy.get(':nth-child(4) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Testt@123');\ncy.get('.user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input').clear();\ncy.get('.user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input').type('Test@123');\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear();\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Test@123');\ncy.get('.oxd-button--secondary').click();\ncy.get('.oxd-userdropdown-name').click();\ncy.get(':nth-child(4) > .oxd-userdropdown-link').click();\n/* ==== End Cypress Studio ==== */",
+              "code": "cy.visit('https://vendor.test.codingtown.com');\ncy.wait(2000);\n//Login\ncy.get('#username').type('demo.test@yopmail.com');\ncy.get('#password').type('Tester@123');\ncy.wait(2000);\ncy.get('.btn').click({\n  force: true\n});\n//selecting the po\ncy.get('#ag-75-input').check();\ncy.get('.ag-body-viewport input.ag-checkbox-input');\n//Confirming the po\ncy.get('.d-sm-inline').click({\n  force: true\n});\ncy.get('#confirmQty').clear().type('1');\ncy.get('.ng-input').click();\ncy.get(\".ng-dropdown-panel-items .ng-option:nth-child(2)\").click();\ncy.get('.d-sm-inline').click({\n  force: true\n});\n//Navigating to confirmed po tab\ncy.get('.mt-3 > .nav > :nth-child(2) > .nav-link').click();\ncy.get('.input-group > .form-control').clear('2');\ncy.get('.input-group > .form-control').type('2239');\ncy.wait(5000);\n//Selecting the Confirmed Po\ncy.get('.ag-cell-wrapper').click({\n  force: true\n});\ncy.get('.d-sm-inline').click();\ncy.get('#ewayNo').type('1234');\ncy.get('#vendorRef').type('123');\ncy.get('#deliveryDate').type('2023-10-20'); // Selecting date \ncy.get('.ng-input').click({\n  force: true\n});\ncy.get('.ng-dropdown-panel-items .ng-option:nth-child(2)').click();\ncy.get('#vehicleNo').type('TN48CD1023');\ncy.get('#driverContact').type('9876543210');\ncy.get('#driver').type('Tester');\ncy.get('#buyer').type('Tester');\ncy.get('#shippingQty').type('1');\ncy.get('#vendorBatch').type('1');\ncy.get('#manufactureDate').type('2023-07-14');\ncy.get('#expiryDate').type('2023-12-20');\ncy.get('#expiryDate').click();\n//Confirm ASN Create\ncy.get('.d-sm-inline').click();\n//Returnable material pop-up\ncy.get('.btn-danger').click();\ncy.get(':nth-child(5) > .nav-item > .nav-link').click({\n  force: true\n});\n//Profile and Logout\ncy.get('.cursor-pointer').click();",
               "err": {
-                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-button`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-button`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/1.cy.js:15:7)",
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<a class=\"dropdown-item cursor-pointer\">...</a>`\n\nis being covered by another element:\n\n`<modal-container role=\"dialog\" tabindex=\"-1\" class=\"modal fade show\" style=\"display: block;\" aria-modal=\"true\">...</modal-container>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<a class=\"dropdown-item cursor-pointer\">...</a>`\n\nis being covered by another element:\n\n`<modal-container role=\"dialog\" tabindex=\"-1\" class=\"modal fade show\" style=\"display: block;\" aria-modal=\"true\">...</modal-container>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:139711:76)\n    at ensureDescendents (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:139762:5)\n    at ensureDescendentsAndScroll (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:139768:14)\n    at ensureElIsNotCovered (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:139899:5)\n    at runAllChecks (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:140079:52)\n    at retryActionability (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:140116:16)\n    at tryCatcher (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise.attempt.Promise.try (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16018:29)\n    at whenStable (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:156400:65)\n    at <unknown> (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:155841:14)\n    at tryCatcher (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16861:18)\n    at Promise._fulfill (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16805:18)\n    at <unknown> (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:18419:46)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/1.cy.js:47:30)",
                 "diff": null
               },
-              "uuid": "62c6d0a8-7562-403f-9858-0b1a47264b3e",
-              "parentUUID": "868fc75f-61ce-412b-a0db-842f93b8b2d2",
+              "uuid": "f0e68e3e-acc7-42f0-889c-5ee7509ac3ac",
+              "parentUUID": "0bdca19b-4140-41f2-b6b8-a38acadbef69",
               "isHook": false,
               "skipped": false
             }
@@ -82,12 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "32135785-bc3e-49ca-992b-8aa0fcb8de4d",
-            "62c6d0a8-7562-403f-9858-0b1a47264b3e"
+            "f0e68e3e-acc7-42f0-889c-5ee7509ac3ac"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 9130,
+          "duration": 26300,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

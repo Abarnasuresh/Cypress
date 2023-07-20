@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
+    "tests": 1,
     "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-07-14T10:17:04.913Z",
-    "end": "2023-07-14T10:17:16.673Z",
-    "duration": 11760,
-    "testsRegistered": 2,
-    "passPercent": 50,
+    "failures": 0,
+    "start": "2023-07-20T09:53:05.385Z",
+    "end": "2023-07-20T09:53:07.377Z",
+    "duration": 1992,
+    "testsRegistered": 1,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "5ddfd049-f906-4529-af2a-0ec328d5a737",
+      "uuid": "6d020932-31cf-448d-8eb0-6d5b21035533",
       "title": "",
-      "fullFile": "cypress\\e2e\\demo.cy.js",
-      "file": "cypress\\e2e\\demo.cy.js",
+      "fullFile": "cypress\\e2e\\Aflow.cy.js",
+      "file": "cypress\\e2e\\Aflow.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "569a8124-fcdd-46b6-86cd-0a107a5395af",
+          "uuid": "60c44538-cf02-42a2-bb46-63240fee3803",
           "title": "template spec",
           "fullFile": "",
           "file": "",
@@ -38,53 +38,29 @@
               "title": "passes",
               "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 2267,
+              "duration": 761,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\demo.cy.js\"\n}",
-              "code": "cy.visit('https://vendor.test.codingtown.com');\ncy.get(\"#username\").type(\"demo.test@yopmail.com\");\ncy.get(\"#password\").type(\"Tester@123\");\ncy.get(\"button[title='Click to sign in']\").click();",
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Aflow.cy.js\"\n}",
+              "code": "cy.visit('https://vendor.test.codingtown.com');",
               "err": {},
-              "uuid": "de1e484b-e2af-4e19-b296-8c2980860569",
-              "parentUUID": "569a8124-fcdd-46b6-86cd-0a107a5395af",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "demo",
-              "fullTitle": "template spec demo",
-              "timedOut": null,
-              "duration": 7323,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\demo.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\demo.cy.js\\\\template spec -- demo (failed).png\"\n      ]\n    ]\n  }\n]",
-              "code": "/* ==== Generated with Cypress Studio ==== */\ncy.visit('https://vendor.test.codingtown.com');\ncy.get('#username').clear('demo.test@yopmail.com');\ncy.get('#username').type('demo.test@yopmail.com');\ncy.get('#password').clear('T');\ncy.get('#password').type('Tester@123');\ncy.get('.d-sm-inline').click();\ncy.get('#ag-75-input').check();\ncy.get('app-loading-button > .btn').click();\ncy.get('#confirmQty').clear('1');\ncy.get('#confirmQty').type('1');\ncy.get('.ng-input').click();\ncy.get('#a96ac5ebdada-2 > .ng-option-label').click();\ncy.get('.d-sm-inline').click();\ncy.get(':nth-child(5) > .nav-item > .nav-link').click();\ncy.get('.cursor-pointer').click();\n/* ==== End Cypress Studio ==== */",
-              "err": {
-                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<button type=\"submit\" class=\"btn btn-primary\" title=\"Click to Confirm PO\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"ng-tns-c49-2 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-warning\" toast-component=\"\" style=\"opacity: 1;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
-                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<button type=\"submit\" class=\"btn btn-primary\" title=\"Click to Confirm PO\">...</button>`\n\nis being covered by another element:\n\n`<div class=\"ng-tns-c49-2 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-warning\" toast-component=\"\" style=\"opacity: 1;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:139711:76)\n    at ensureDescendents (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:139762:5)\n    at ensureDescendentsAndScroll (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:139768:14)\n    at ensureElIsNotCovered (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:139899:5)\n    at runAllChecks (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:140079:52)\n    at retryActionability (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:140116:16)\n    at tryCatcher (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise.attempt.Promise.try (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16018:29)\n    at whenStable (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:156400:65)\n    at <unknown> (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:155841:14)\n    at tryCatcher (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16861:18)\n    at Promise._fulfill (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:16805:18)\n    at <unknown> (https://vendor.test.codingtown.com/__cypress/runner/cypress_runner.js:18419:46)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/demo.cy.js:18:40)",
-                "diff": null
-              },
-              "uuid": "6b3ebfc6-ac3d-406f-bf10-1ef636886f45",
-              "parentUUID": "569a8124-fcdd-46b6-86cd-0a107a5395af",
+              "uuid": "58125ed2-297e-41e2-a289-b377f170b7fb",
+              "parentUUID": "60c44538-cf02-42a2-bb46-63240fee3803",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "de1e484b-e2af-4e19-b296-8c2980860569"
+            "58125ed2-297e-41e2-a289-b377f170b7fb"
           ],
-          "failures": [
-            "6b3ebfc6-ac3d-406f-bf10-1ef636886f45"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9590,
+          "duration": 761,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
